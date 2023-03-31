@@ -1,13 +1,13 @@
-#Hybrid Mutation driven Testing for Natural Language Inference
+# Hybrid Mutation driven Testing for Natural Language Inference
 This repository stores our experimental codes for the paper "Hybrid Mutation driven Testing for Natural Language Inference". HMT is short for the approach we proposed in this paper: **Hybrid Mutation driven Testing**.
 
-##Datasets
+## Datasets
 We used two NLI datasets, MNLI and SNLI, which are placed in the dataset folder, and we mainly apply the test sets of the two datasets.
 
-##Models
+## Models
 We used two state-of-the-art NLI models for testing, Decomposable Attention and RoBERTa. We call these two models through python library allennlp and torch.
 
-##Our Approach
+## Our Approach
 
 Our method HMT comprises the following three steps:
 
