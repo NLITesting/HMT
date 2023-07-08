@@ -12,6 +12,7 @@ from pywsd.lesk import cosine_lesk
 label_map = {0: 'contradiction', 1: 'neutral', 2: 'entailment'}
 threshold = 0.9
 
+
 filename = "MG_JMV_SF"
 with open(filename+".json", "r", encoding="utf-8") as f:
     mutations = json.load(f)
