@@ -5,7 +5,7 @@ This repository stores our experimental codes for the paper "Hybrid Mutation dri
 We used two NLI datasets, MNLI and SNLI, which are placed in the dataset folder, and we mainly apply the test sets of the two datasets.
 
 ## Models
-We used two state-of-the-art NLI models for testing, Decomposable Attention and RoBERTa. We call these two models through python library allennlp and torch.
+We used two state-of-the-art NLI models for testing, Decomposable Attention and RoBERTa. We call these two models through Python library allennlp and torch.
 
 ## Our Approach
 
@@ -17,4 +17,4 @@ Our method HMT comprises the following three steps:
 
 (c) **Prediction Evaluation.** We import the mutated and original samples into the NLI model and mark the inconsistent predicted results as inconsistency bugs.
 
-We place our code in three folders according to these three steps, and the folder has the same name as the step. The code in mutation_generation folder is divided according to the data set. Each folder contains four .py files corresponding to four mutation operators. This part of the code includes mutation generation and structural filter (the stanford-corenlp-4.4.0.zip file contains related models for structural filtering). The code of similarity filter and disambiguation filter are placed in the mutation_filter folder. The code in the prediction_evaluation folder corresponds to the step prediction evaluation.
+We place our code in three folders according to these three steps, and the folder has the same name as the step. The code in the mutation_generation folder is divided according to the data set. Each folder contains four .py files corresponding to four mutation operators. This part of the code includes mutation generation and structural filtering (the stanford-corenlp-4.4.0.zip file contains related models for structural filtering). The code of the similarity filter and disambiguation filter are placed in the mutation_filter folder. The code in the prediction_evaluation folder corresponds to the step prediction evaluation.
